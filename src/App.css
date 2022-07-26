@@ -22,7 +22,6 @@ div.p1{
 .param{
   height: 30px;
   position: relative;
-  bottom: -100px;
 }
 
 .centerBar {
@@ -80,6 +79,7 @@ img.coin {
 }
 .maintext {
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .bn29 {
@@ -140,6 +140,10 @@ img.coin {
   height: 115%;
 }
 
+.inputconfig {
+  width: 250px;
+}
+
 .gradline{
   margin: 0;
   padding: 0;
@@ -156,4 +160,20 @@ img.coin {
     #07b39b,
     #6fba82
   );
+}
+
+.onvstarMarker{
+  display: block;
+  height: 100px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.offvstarMarker{
+  display: block;
+  height: 100px;
+  margin: auto;
+  margin-top: 15px;
+  opacity: .1;
+  transition: all .3s 0s ease;
 }
