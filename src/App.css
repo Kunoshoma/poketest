@@ -167,7 +167,9 @@ img.coin {
   height: 100px;
   margin: auto;
   margin-top: 15px;
+  filter: drop-shadow(0px 0px 15px #f79533);
 }
+
 
 .offvstarMarker{
   display: block;
