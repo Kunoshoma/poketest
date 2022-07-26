@@ -1,22 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Player from './Player.jsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Player className="p1" />
+        <div className='centerBar'>
+          <h1>プレイヤー名</h1>
+          <h1>サイド枚数</h1>
+          <h1>残りHP</h1>
+        </div>
+        <Player className="p2" />
       </header>
     </div>
   );
