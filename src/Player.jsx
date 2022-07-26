@@ -28,9 +28,15 @@ class Player extends React.Component {
   render() {
     return (
       <div className="p1">
-        <h1>{this.state.value}</h1>
-        <h1>{this.state.ene}</h1>
-        <h1>{this.state.hp}</h1>
+        <p className="discription">プレイヤー</p>
+        <div className="gradline"></div>
+        <h1 className="maintext">{this.state.value}</h1>
+        <p className="discription">サイド枚数</p>
+        <div className="gradline"></div>
+        <h1 className="maintext">{this.state.ene}</h1>
+        <p className="discription">残りHP</p>
+        <div className="gradline"></div>
+        <h1 className="maintext">{this.state.hp}</h1>
         <form onSubmit={this.handleSubmit}>
           <label className="param">
             <input

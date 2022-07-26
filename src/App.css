@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,14 +9,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: calc(30px + 1vmin);
+  font-size: calc(27px + 1vmin);
   color: white;
 }
 
 div.p1{
   padding-left: 200px;
   padding-right: 200px;
-  width: 300px;
+  width: 600px;
 }
 
 .param{
@@ -40,4 +29,131 @@ div.p1{
   flex-direction: column;
   font-size: 20px;
   width: 30%;
+}
+
+.coin {
+  width: 200px;
+  height: 200px;
+  right: 0;
+  left: 0;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+img.coin {
+  display: block;
+  margin: 0 auto;
+}
+
+.fieldname {
+  font-size: 38px;
+  margin: 0 auto;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: 30px;
+}
+
+.fieldinput {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 40px;
+}
+
+.discription {
+  font-size: 20px;
+  margin: 0;
+}
+.maintext {
+  margin-top: 0;
+}
+
+.bn29 {
+  border: none;
+  padding: 0.8em 2.5em;
+  outline: none;
+  color: white;
+  font-style: 1.2em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.bn29:before,
+.bn29:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: "";
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+
+.bn29:before {
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-animation: pulse 10s infinite ease;
+  animation: pulse 10s infinite ease;
+}
+
+.bn29:after {
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
+}
+
+.bn29:hover:before {
+  width: 115%;
+  height: 115%;
+}
+
+.gradline{
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
 }
