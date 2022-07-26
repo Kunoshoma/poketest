@@ -15,7 +15,7 @@ function Coin() {
         )}
         <button
           className="bn29"
-          onMouseDown={() => setNum((num = Math.random))}
+          onClick={() => setNum((num = Math.random))}
         >
           コイン
         </button>
